@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Readex Pro";
+  src: url("./readex-pro/ReadexPro-Regular.woff2") format("woff2"), url("./readex-pro/ReadexPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Readex Pro";
+  src: url("./readex-pro/ReadexPro-Medium.woff2") format("woff2"), url("./readex-pro/ReadexPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Readex Pro, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+}
+
+.banner-sm {
+  width: 100%;
+  height: 60px;
+  background-color: #F9F3F1;
+  text-align: left;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.banner-sm.dark {
+  background-color: #0F1B38;
+  color: #F9F3F1;
+}
+.banner-sm.dark .text p a {
+  color: #F9F3F1;
+}
+.banner-sm .logo {
+  height: 25px;
+  margin-top: 12px;
+  padding-left: 15px;
+}
+.banner-sm .text {
+  text-align: right;
+  padding-right: 15px;
+  padding-top: 5px;
+}
+.banner-sm .text p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.banner-sm .text p a {
+  color: #A43400;
+  font-weight: 500;
+}
+.banner-sm .text p.arrow {
+  margin-left: 1rem;
+}
+
+.banner-md {
+  width: 100%;
+  height: auto;
+  background-color: #F9F3F1;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.banner-md .patient-portal-phone {
+  width: 100%;
+  margin-bottom: -4px;
+}
+.banner-md .patient-portal-phone.dark {
+  background-color: #0F1B38;
+}
+.banner-md .text {
+  padding-right: 30px;
+  text-align: left;
+}
+.banner-md .text .logo {
+  width: 100px;
+}
+.banner-md .text p {
+  color: #0F1B38;
+  font-size: 1.2em;
+  margin-top: 4px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.banner-md .text p a {
+  color: #A43400;
+  font-weight: 500;
+}
+
+.banner-lg {
+  background-color: #F9F3F1;
+  text-align: center;
+  border-radius: 12px;
+  width: 100%;
+  height: 300px;
+  color: #0F1B38;
+}
+.banner-lg.dark {
+  background-color: #0F1B38;
+  color: #F9F3F1;
+}
+.banner-lg .patient-portal-phone {
+  height: 300px;
+  margin-bottom: -4px;
+}
+.banner-lg .text {
+  text-align: left;
+}
+.banner-lg .text .logo {
+  width: 160px;
+}
+.banner-lg .text p {
+  font-size: 30px;
+  margin-top: 0.6rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+.banner-lg .text .button {
+  padding: 16px 30px;
+  background-color: #A43400;
+  color: #F9F3F1;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 700px) {
+  .banner-lg .patient-portal-phone {
+    position: relative;
+    z-index: 1;
+    opacity: 40%;
+  }
+  .banner-lg .text {
+    position: relative;
+    z-index: 2;
+  }
+}/*# sourceMappingURL=style.css.map */

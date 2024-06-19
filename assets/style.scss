@@ -1,0 +1,158 @@
+// VARIABLES
+$color-chalk: #F9F3F1;
+$color-cinnamon: #A43400;
+$color-galactic: #0F1B38;
+
+@font-face {
+    font-family: 'Readex Pro';
+    src: url('./readex-pro/ReadexPro-Regular.woff2') format('woff2'),
+         url('./readex-pro/ReadexPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Readex Pro';
+    src: url('./readex-pro/ReadexPro-Medium.woff2') format('woff2'),
+         url('./readex-pro/ReadexPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+// Rest of the code...
+
+// STYLES
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Readex Pro, Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+}
+
+.banner-sm {
+    width: 100%;
+    height: 60px;
+    background-color: $color-chalk;
+    text-align: left;
+    border-radius: 6px;
+    overflow: hidden;
+    &.dark {
+        background-color: $color-galactic;
+        color: $color-chalk;
+        .text {
+            p {
+                a{
+                    color: $color-chalk;
+                }
+            }
+        }
+    }
+    .logo {
+        height: 25px;
+        margin-top: 12px;
+        padding-left: 15px;
+    }
+    .text {
+        text-align: right;
+        padding-right: 15px;
+        padding-top: 5px;
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            a {
+                color: $color-cinnamon;
+                font-weight: 500;
+            } &.arrow {
+                margin-left: 1rem;
+            }
+        }
+    }
+
+}
+
+.banner-md {
+    width: 100%;
+    height: auto;
+    background-color: $color-chalk;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    .patient-portal-phone {
+        width: 100%;
+        margin-bottom: -4px;
+        &.dark {
+           background-color: $color-galactic; 
+        }
+    }
+    .text {
+        padding-right: 30px;
+        text-align: left;
+        .logo {
+            width: 100px;
+        }
+        p {
+            color: $color-galactic;
+            font-size: 1.2em;
+            margin-top: 4px;
+            margin-bottom: 0;
+            font-weight: 400;
+            a {
+                color: $color-cinnamon;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.banner-lg {
+    background-color: $color-chalk;
+    text-align: center;
+    border-radius: 12px;
+    width: 100%;
+    height: 300px;
+    color: $color-galactic;
+    &.dark {
+        background-color: $color-galactic;
+        color: $color-chalk;
+    }
+    .patient-portal-phone {
+        height: 300px;
+        margin-bottom: -4px;
+    }
+    .text {
+        text-align: left;
+        .logo {
+            width: 160px;
+        }
+        p {
+            font-size: 30px;
+            margin-top: .6rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+        .button {
+            padding: 16px 30px;
+            background-color: $color-cinnamon;
+            color: $color-chalk;
+            font-size: 20px;
+            font-weight: 400;
+            text-decoration: none;
+            border: none;
+            border-radius: 6px; 
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .banner-lg {
+        .patient-portal-phone {
+            position: relative;
+            z-index: 1;
+            opacity: 40%;
+        }
+        .text {
+            position: relative;
+            z-index: 2;
+        }
+    }
+    
+}
